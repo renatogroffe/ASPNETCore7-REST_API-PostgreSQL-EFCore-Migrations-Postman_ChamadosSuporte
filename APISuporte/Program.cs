@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<SuporteContext>(
     options => options.UseNpgsql(
-        builder.Configuration.GetConnectionString("basesuporte"))
+        builder.Configuration.GetConnectionString("BaseSuporte"))
 );
 builder.Services.AddScoped<ChamadosService>();
 
